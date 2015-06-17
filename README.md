@@ -6,6 +6,8 @@ the last 25 years. The actual DB is stored in dBase or ASCII format.
 
 http://www.imo.net/data/visual
 
+![Graph](./images/lyr2015overview.png)
+
 ## 1) Installation (Linux)
 
 ```bash
