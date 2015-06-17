@@ -20,3 +20,16 @@ $ sudo apt-get install gqis
 $ wget http://www.imo.net/files/data/vmdb/MAGN_11.TXT
 $ wget http://www.imo.net/files/data/vmdb/vmdbsite.txt
 ```
+
+## 3) Python dependencies
+
+```bash
+$ sudo pip install nominatim geopy
+```
+
+## Reversing address based on lat + lon coordinates
+
+```python
+geolocator = Nominatim()
+location = geolocator.reverse("52.509669, 13.376294")
+```
