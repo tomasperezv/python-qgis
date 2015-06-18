@@ -12,5 +12,7 @@ for line in open('sample-data/MAGN_11.TXT','r'):
         lat = data[1] + data[2]
         lon = data[3] + data[4]
         # Reverse location lookup based on the coordinates
-        location = geolocator.reverse(lat + ', ' + lon)
+        location = geolocator.reverse(lat + ', ' + lon, True)
         # location.address contains the needed reverse address
+        if location <> None:
+            pass

@@ -33,3 +33,8 @@ $ sudo pip install nominatim geopy
 geolocator = Nominatim()
 location = geolocator.reverse("52.509669, 13.376294")
 ```
+
+## Reference
+
+Nominatim Search service Developers Guide
+http://open.mapquestapi.com/nominatim/
