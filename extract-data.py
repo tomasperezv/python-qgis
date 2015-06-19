@@ -15,4 +15,10 @@ for line in open('sample-data/MAGN_11.TXT','r'):
         location = geolocator.reverse(lat + ', ' + lon, True)
         # location.address contains the needed reverse address
         if location <> None:
-            pass
+            try:
+                location = geolocator.reverse(lat + ', ' + lon)
+                # location.address contains the needed reverse address
+                if location <> None:
+                    pass
+            except (RuntimeError, TypeError, NameError):
+                pass
