@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+"""
+ extract-data.py
+ @author tom@0x101.com
+"""
 from datetime import datetime
 from itertools import chain
 from urllib import urlopen
