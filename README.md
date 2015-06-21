@@ -24,7 +24,7 @@ $ wget http://www.imo.net/files/data/vmdb/vmdbsite.txt
 ## 3) Python dependencies
 
 ```bash
-$ sudo pip install nominatim geopy python-geoip python-geoip-geolite2
+$ sudo pip install nominatim geopy python-geoip python-geoip-geolite2 ping
 ```
 
 ## Reversing address based on lat + lon coordinates
@@ -41,6 +41,13 @@ from geoip import geolite2
 locate = geolite2.lookup('127.0.0.1')
 if locate is not None:
   print match.country
+```
+
+## Network ping
+
+```python
+import ping
+verbose_ping("google.com")
 ```
 
 ## Reference
