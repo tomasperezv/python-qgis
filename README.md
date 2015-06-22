@@ -43,11 +43,11 @@ if locate is not None:
   print match.country
 ```
 
-## Network ping
+## Computing network latency to the nominatim OpenStreetMap API
 
 ```python
 import ping
-verbose_ping("google.com")
+delay = ping.do_one('nominatim.openstreetmap.org', 500, 64)
 ```
 
 ## Reference
